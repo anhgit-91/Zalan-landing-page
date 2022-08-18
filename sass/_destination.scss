@@ -1,5 +1,6 @@
 .destination {
     padding-top: 13.6rem;
+    margin-bottom: 23.5rem;
     &-container {
         display:flex;
         justify-content: space-between;
@@ -42,14 +43,13 @@
         font-weight: bold;
         margin-bottom: 15px;
     }
-    &-place {
-        font-weight: 300;
-        font-size: 12px;
-    }
     &-heading {
         margin-bottom: 5rem;
     }
     &-text {
         margin-bottom: 9rem;
+    }
+    &-info {
+        transform: translateY(86px);
     }
 }

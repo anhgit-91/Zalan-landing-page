@@ -33,6 +33,15 @@ body {
     font-weight: 300;
     line-height: 1.5;
     color: $text-light-color;
+    &--small {
+        font-size: 12px;
+    }
+}
+.text--primary {
+    color: $primary;
+}
+.text--secondary {
+    color: $secondary;
 }
 .btn {
     display: inline-block;
@@ -46,9 +55,26 @@ body {
     &-primary {
         color:white;
         background-color: $primary;
+        transition: all 0.2s linear;
+        &:hover,
+        &:focus {
+            background-color: rgba($primary, 0.8);
+        }
+    }
+    .layout {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 16rem;
+        & > dive:first-child {
+            width: 100%;
+            max-width: 76rem;
+        }
     }
 }
-
+.underline {
+    text-decoration: underline;
+}
 @media screen and (max-width: 1599px) {
     html {
         font-size: 40%;

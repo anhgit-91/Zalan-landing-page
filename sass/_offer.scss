@@ -1,0 +1,57 @@
+.offer {
+    margin-bottom: 24rem;
+    &-header {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 11.5rem;
+    }
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 8rem;
+    }
+    &-image {
+        height: 56rem;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 6rem;
+        &-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &-top {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    &-title {
+        font-weight: 600;
+        margin-bottom: 4.5rem;
+    }
+    &-bottom {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-location {
+        display: flex;
+        align-items: center;
+        ion-icon {
+            color: $dark-gray;
+            font-size: 20px;
+            margin-right: 5px;
+        }
+    }
+    &-rating {
+        display: flex;
+        align-items: center;
+        ion-icon {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+    }
+}
