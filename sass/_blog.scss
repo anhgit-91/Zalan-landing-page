@@ -1,10 +1,8 @@
 .blog {
+    margin-bottom: 16rem;
     &-heading {
         text-align: center;
         margin-bottom: 13.5rem;
-    }
-    &-main {
-        max-width: 76rem;
     }
     &-image {
         height: 45rem;
@@ -57,5 +55,34 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 5rem 0;
+    }
+    &-item {
+        display: grid;
+        grid-template-columns: 1fr 13.5rem;
+        grid-gap: 0 8rem;
+        align-items: center;
+    }
+    &-item-title {
+        font-weight: 600;
+        margin-bottom: 3rem;
+        line-height: 1.5;
+    }
+    &-item-author {
+        font-weight: 300;
+        color: $text-light-color;
+    }
+    &-item-image {
+        position: relative;
+        height: 0;
+        padding-bottom: 100%;
+        img {
+            border-radius: 12px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     }
 }

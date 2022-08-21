@@ -1,0 +1,72 @@
+.booking {
+    padding: 18rem 0 16rem;
+    border-radius: 20px;
+    background-color: $light-blue;
+    margin-bottom: 17.5rem;
+    &-container {
+        min-width: 96rem;
+        margin-right: 0 auto;
+    }
+    &-heading {
+        text-align: center;
+        margin-bottom: 7.5rem;
+    }
+    &-form {
+        padding: 2.5rem;
+        background-color: white;
+        border-radius: 12px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 10rem;
+        grid-gap: 2.5rem;
+    }
+    &-search {
+        height: 10rem;
+        width: 10rem;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-destination {
+        background-color: $gray;
+        border-radius: inherit;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3rem;
+        ion-icon {
+            color: $primary;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+    &-input {
+        border: none;
+        background-color: transparent;
+    }
+}
+.dropdown {
+    width: 100%;
+    height: 100%;
+    background-color: $gray;
+    border-radius: 12px;
+    position: relative;
+    padding: 0 3rem;
+    ion-icon {
+        color: $primary;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    &-list {
+        display: none;
+    }
+    &-select {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    &-value {
+        color: $text-light-color;
+    }
+}

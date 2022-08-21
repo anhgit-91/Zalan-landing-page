@@ -52,7 +52,7 @@ body {
     font-weight: 600;
     letter-spacing: 0.5px;
     padding: 4.5rem;
-    &-primary {
+    &--primary {
         color:white;
         background-color: $primary;
         transition: all 0.2s linear;
@@ -61,16 +61,18 @@ body {
             background-color: rgba($primary, 0.8);
         }
     }
-    .layout {
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0 16rem;
-        & > dive:first-child {
-            width: 100%;
-            max-width: 76rem;
-        }
+}
+
+.layout {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 16rem;
+    & > div:first-child {
+        width: 100%;
+        max-width: 76rem;
     }
+    
 }
 .underline {
     text-decoration: underline;
