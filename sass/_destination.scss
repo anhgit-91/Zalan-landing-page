@@ -2,10 +2,10 @@
     padding-top: 13.6rem;
     margin-bottom: 23.5rem;
     &-container {
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0 16rem;
+        // display:flex;
+        // justify-content: space-between;
+        // align-items: center;
+        // gap: 0 16rem;
     }
     &-list {
         width: 100%;
@@ -45,11 +45,25 @@
     }
     &-heading {
         margin-bottom: 5rem;
+        max-width: 40rem;
     }
     &-text {
         margin-bottom: 9rem;
+        max-width: 55rem;
     }
     &-info {
-        transform: translateY(86px);
+        transform: translateY(19.5rem);
+        margin-right: auto;
     }
+    @media screen and (max-width: 1023px) { 
+        &-info {
+            transform: none;         
+        }
+    }
+    @media screen and (max-width: 767.98px) {
+        &-info {
+
+        }
+    }
+    
 }

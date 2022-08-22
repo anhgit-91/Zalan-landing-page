@@ -21,7 +21,9 @@
             <div class="container">
                 <div class="header-top">
                     <a href="#" class="header-logo"><img src="./images/logo.png" alt="Zaln Home" ></a>
+                    <ion-icon name="menu" class="header-toggle"></ion-icon>
                     <ul class="menu">
+                        <ion-icon name="close" class="menu-close"></ion-icon>
                         <li class="menu-item">
                             <a href="#" class="menu-link">Promotions</a>
                         </li>
@@ -36,7 +38,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="header-content">
+                <div class="layout header-content">
                     <div class="header-info">
                         <h1 class="header-heading">
                             Let's make your best trip ever!
@@ -70,7 +72,7 @@
         <main>
             <section class="destination">
                 <div class="container">
-                    <div class="destination-container">
+                    <div class="layout destination-container">
                         <div class="destination-list">
                             <div class="destination-item">
                                 <div class="destination-image">
@@ -113,7 +115,7 @@
                             <h2 class="heading destination-heading">
                                 Popular destinations
                             </h2>
-                            <p class="text destination-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p class="text destination-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <a href="#" class="btn btn--primary">More Destination</a>
                         </div>
                     </div>
@@ -123,7 +125,6 @@
                 <div class="container">
                     <div class="offer-header">
                         <h2 class="heading">Special offers</h2>
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptates!</p>
                     </div>
                     <div class="offer-list">
                         <div class="offer-item">
@@ -277,35 +278,38 @@
                     </div>
                 </div>
             </section>
-            <section class="booking">
-                <div class="container">
-                    <div class="booking-contain">
-                        <h2 class="heading booking-heading">Book Your Tour Now!</h2>
-                        <div class="booking-form">
-                            <div class="booking-destination">
-                                <input type="text" class="booking-input" placeholder="Destination">
-                                <ion-icon name="location"></ion-icon>
-                            </div>
-                            <div class="booking-schedule">
-                                <div class="dropdown">
-                                  <div class="dropdown-select">
-                                    <span class="dropdown-value">Schedule</span>
-                                    <ion-icon name="chevron-down"></ion-icon>
-                                  </div>
-                                  <div class="dropdown-list">
-                                    <div class="dropdown-item">title</div>
-                                    <div class="dropdown-item">title</div>
-                                    <div class="dropdown-item">title</div>
-                                  </div>
-                                </div>                             
-                            </div>
-                            <button class="btn btn--primary booking-search">
-                                <ion-icon name="search"></ion-icon>
-                            </button>
-                        </div>
+            <section class="book">
+                <div class="container book-container">
+                  <h2 class="heading book-heading">Book your tour dates now</h2>
+                  <div class="book-form">
+                    <div class="book-destination">
+                      <input
+                        type="text"
+                        class="book-input"
+                        placeholder="Destination"
+                      />
+                      <ion-icon name="location"></ion-icon>
                     </div>
+                    <div class="book-calendar">
+                      <div class="dropdown">
+                        <div class="dropdown-select">
+                          <span class="dropdown-value">Schedule</span>
+                          <ion-icon name="chevron-down"></ion-icon>
+                        </div>
+                        <div class="dropdown-list">
+                          <div class="dropdown-item">10AM</div>
+                          <div class="dropdown-item">14PM</div>
+                          <div class="dropdown-item">18PM</div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn--primary book-button">
+                      <ion-icon name="search"></ion-icon>
+                    </button>
+                  </div>
                 </div>
-            </section>
+              </section>
+            </main>
             <footer class="footer">
                 <div class="container">
                     <div class="footer-header">
@@ -378,7 +382,7 @@
                     </div>                 
                 </div>
             </footer>
-        </main>
     </div>
+    <script type="text/javascript" src="./app.js" ></script>
 </body>
 </html>
